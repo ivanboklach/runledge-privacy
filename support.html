@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Runledge — Support</title>
+<meta name="description" content="Support for Runledge, a personal running analytics app for iPhone.">
+<style>
+  :root {
+    --gold: #FCD34D;
+    --gold-soft: #FDE68A;
+    --line: rgba(252, 211, 77, 0.22);
+    --text: #F5F3EE;
+    --muted: #A8A29A;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    padding: 56px 20px 96px;
+    background: #0B0900;
+    background-image: linear-gradient(155deg, #0B0900 0%, #130D00 55%, #080600 100%);
+    background-attachment: fixed;
+    color: var(--text);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  }
+  main { max-width: 680px; margin: 0 auto; }
+  header { border-bottom: 1px solid var(--line); padding-bottom: 28px; margin-bottom: 40px; }
+  .wordmark {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 40px;
+    line-height: 1.1;
+    margin: 0;
+    background: linear-gradient(135deg, var(--gold-soft), #F59E0B);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .subtitle { margin: 10px 0 0; font-size: 15px; color: var(--muted); }
+  .updated {
+    margin: 18px 0 0;
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--gold);
+  }
+  h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 21px;
+    font-weight: 600;
+    color: #FFFFFF;
+    margin: 44px 0 12px;
+  }
+  p { margin: 0 0 14px; }
+  ul { margin: 0 0 14px; padding-left: 22px; }
+  li { margin-bottom: 7px; }
+  strong { color: #FFFFFF; font-weight: 600; }
+  a { color: var(--gold); }
+  .callout {
+    border: 1px solid var(--line);
+    background: rgba(252, 211, 77, 0.06);
+    border-radius: 14px;
+    padding: 20px 22px;
+    margin: 20px 0 14px;
+  }
+  .callout p:last-child { margin-bottom: 0; }
+  footer {
+    margin-top: 56px;
+    padding-top: 24px;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    font-size: 13px;
+    color: var(--muted);
+  }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1 class="wordmark">Runledge</h1>
+    <p class="subtitle">Support</p>
+    <p class="updated">Last updated: 7 September 2026</p>
+  </header>
+
+  <p>Runledge is a running analytics app for iPhone. If something is wrong, or you want a
+  feature, write to <a href="mailto:elitrenthood@gmail.com">elitrenthood@gmail.com</a> —
+  it reaches the developer directly. Include your iOS version and what you were doing when
+  it went wrong; that usually saves a round trip.</p>
+
+  <h2>The app is empty after signing in</h2>
+  <p>Runledge does not record runs itself — it reads what your watch already wrote to Apple
+  Health. Open <strong>Runs → Import</strong> and allow access when iOS asks. If you
+  declined earlier, grant it again in Settings → Privacy &amp; Security → Health →
+  Runledge, then import.</p>
+
+  <h2>Some runs are missing</h2>
+  <p>Only workouts recorded as runs are imported. A walk, a hike or a workout recorded by an
+  app that never wrote to Apple Health will not appear.</p>
+
+  <h2>Recovery or sleep shows nothing</h2>
+  <p>Those need overnight data — heart rate variability, resting heart rate, breathing rate
+  and sleep stages — which means wearing the watch to bed. Expect a couple of weeks before
+  the baseline is meaningful; the score compares each night against your own normal, and it
+  has to learn what that is.</p>
+
+  <h2>A number here disagrees with another app</h2>
+  <p>Most likely your heart rate zones. Runledge derives training load from time in zone,
+  so its zones have to match how you actually train. Set them under
+  <strong>Profile → HR Zones</strong>.</p>
+
+  <h2>Deleting your account</h2>
+  <p><strong>Profile → Delete Account</strong>, confirmed with your password. Everything —
+  runs, health records, gear, races and plans — is deleted permanently and cannot be
+  recovered. See the <a href="./">privacy policy</a> for what is stored in the first place.</p>
+
+  <h2>Using it on the web</h2>
+  <p>The same account works at
+  <a href="https://runledge.vercel.app">runledge.vercel.app</a>; both clients read the same
+  data.</p>
+
+  <footer>
+    Runledge — personal running analytics. <a href="./">Privacy policy</a>
+  </footer>
+</main>
+</body>
+</html>
