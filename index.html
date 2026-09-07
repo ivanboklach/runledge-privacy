@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Runledge — Privacy Policy</title>
+<meta name="description" content="Privacy policy for Runledge, a personal running analytics app for iPhone.">
+<style>
+  :root {
+    --gold: #FCD34D;
+    --gold-soft: #FDE68A;
+    --line: rgba(252, 211, 77, 0.22);
+    --text: #F5F3EE;
+    --muted: #A8A29A;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    padding: 56px 20px 96px;
+    background: #0B0900;
+    background-image: linear-gradient(155deg, #0B0900 0%, #130D00 55%, #080600 100%);
+    background-attachment: fixed;
+    color: var(--text);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  }
+  main { max-width: 680px; margin: 0 auto; }
+  header { border-bottom: 1px solid var(--line); padding-bottom: 28px; margin-bottom: 40px; }
+  .wordmark {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 40px;
+    line-height: 1.1;
+    margin: 0;
+    background: linear-gradient(135deg, var(--gold-soft), #F59E0B);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .subtitle { margin: 10px 0 0; font-size: 15px; color: var(--muted); }
+  .updated {
+    margin: 18px 0 0;
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--gold);
+  }
+  h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 21px;
+    font-weight: 600;
+    color: #FFFFFF;
+    margin: 44px 0 12px;
+  }
+  p { margin: 0 0 14px; }
+  ul { margin: 0 0 14px; padding-left: 22px; }
+  li { margin-bottom: 7px; }
+  strong { color: #FFFFFF; font-weight: 600; }
+  a { color: var(--gold); }
+  .callout {
+    border: 1px solid var(--line);
+    background: rgba(252, 211, 77, 0.06);
+    border-radius: 14px;
+    padding: 20px 22px;
+    margin: 20px 0 14px;
+  }
+  .callout p:last-child { margin-bottom: 0; }
+  footer {
+    margin-top: 56px;
+    padding-top: 24px;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    font-size: 13px;
+    color: var(--muted);
+  }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1 class="wordmark">Runledge</h1>
+    <p class="subtitle">Privacy Policy for the Runledge app for iPhone</p>
+    <p class="updated">Last updated: 7 September 2026</p>
+  </header>
+
+  <p>Runledge is a personal running analytics app. It reads your workouts from Apple
+  Health, stores them in your own account, and shows you what they add up to — training
+  load, recovery, sleep quality, race predictions. It is built and run by an individual
+  developer, not a company.</p>
+
+  <p>This policy describes exactly what data Runledge handles and what it does with it.
+  It applies to the Runledge iOS app and to the Runledge web app at
+  <a href="https://runledge.vercel.app">runledge.vercel.app</a>, which share one account
+  and one database.</p>
+
+  <h2>Data Runledge collects</h2>
+
+  <p><strong>Account information.</strong> Your email address and password, used only to
+  sign you in. Authentication is handled by Supabase; your password is stored as a
+  cryptographic hash and is never visible to the developer.</p>
+
+  <p><strong>Training data you create.</strong> Runs and their details — distance,
+  duration, pace, heart rate, elevation, route, perceived effort, notes — along with
+  anything else you enter yourself, such as shoes and gear, planned races, training
+  plans and body weight.</p>
+
+  <p><strong>Health and fitness data from Apple Health.</strong> Described in the next
+  section.</p>
+
+  <p>Runledge contains no advertising SDKs, no third-party analytics, and no crash or
+  usage tracking. It does not read your contacts, photos, calendar, microphone or camera.</p>
+
+  <h2>Apple Health (HealthKit) data</h2>
+
+  <p>Runledge asks for permission to <strong>read</strong> the following from Apple
+  Health. It never writes anything back to Apple Health. Permission is granted by you in
+  the system dialog, per data type, and can be withdrawn at any time in
+  Settings → Privacy &amp; Security → Health → Runledge.</p>
+
+  <ul>
+    <li>Workouts and workout routes, including the GPS track of a run</li>
+    <li>Heart rate, resting heart rate and heart rate variability (HRV)</li>
+    <li>Walking and running distance, step count, active energy burned</li>
+    <li>Running dynamics: stride length, vertical oscillation, ground contact time</li>
+    <li>Respiratory rate, blood oxygen and wrist temperature measured during sleep</li>
+    <li>Sleep analysis, including sleep stages</li>
+  </ul>
+
+  <p>This data is read only while you are using the app — Runledge does not read from
+  Apple Health in the background. It is used for one purpose: to calculate and display
+  your own training and recovery metrics back to you.</p>
+
+  <div class="callout">
+    <p><strong>Health data is never used for advertising or marketing.</strong></p>
+    <p><strong>Health data is never sold, rented or otherwise disclosed to third
+    parties</strong>, and is never shared with data brokers, advertising networks or
+    information resellers.</p>
+    <p><strong>Health data is never used to make decisions about you</strong> by anyone
+    other than you — it is not shared with insurers, employers or any similar party.</p>
+  </div>
+
+  <h2>Where your data is stored</h2>
+
+  <p>Your account and training data are stored in a private database hosted by
+  <a href="https://supabase.com">Supabase</a>, which acts solely as the hosting provider.
+  Every table is protected by row-level security, so a signed-in account can read only
+  its own rows. Data is transmitted over HTTPS. The app also keeps a copy of your own
+  data on your device so it works offline; that copy is removed when you sign out or
+  delete the app.</p>
+
+  <h2>Who your data is shared with</h2>
+
+  <p>Nobody, unless you choose to share it. Runledge has an optional coaching feature: if
+  you invite a coach and accept the link, that coach can see your runs and training
+  metrics. You can end the link at any time, which immediately revokes their access. No
+  other user, and no third party, can see your data.</p>
+
+  <p>Your data is not sold, and it is not used to train machine learning models.</p>
+
+  <h2>How long data is kept, and how to delete it</h2>
+
+  <p>Your data is kept for as long as you have an account. To delete your account and
+  everything associated with it, write to the address below from the email address on
+  the account. The account and all of its rows — runs, health metrics, sleep records,
+  gear, plans — are deleted permanently, and this cannot be undone.</p>
+
+  <p>You can also remove data at a smaller scale yourself: individual runs can be deleted
+  in the app, and revoking Health permissions stops any further reading from Apple Health.</p>
+
+  <h2>Children</h2>
+
+  <p>Runledge is not directed at children and is not intended for use by anyone under 13.</p>
+
+  <h2>Changes to this policy</h2>
+
+  <p>If this policy changes, the revised version will be published at this address with a
+  new date at the top.</p>
+
+  <h2>Contact</h2>
+
+  <p>Questions about this policy, or requests to delete your data:
+  <a href="mailto:elitrenthood@gmail.com">elitrenthood@gmail.com</a></p>
+
+  <footer>
+    Runledge — personal running analytics.
+  </footer>
+</main>
+</body>
+</html>
